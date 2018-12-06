@@ -1,0 +1,816 @@
+
+/* Initialisation */
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    color:black;
+    background-color: #E6E6E6;
+    max-width: 1920px;
+    min-width: 320px;
+}
+
+
+@font-face {
+    font-family: 'enigmaticregular';
+    src: url('Police/EnigmaB_2-webfont.eot');
+    src: url('Police/EnigmaB_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Police/EnigmaB_2-webfont.woff2') format('woff2'),
+         url('Police/EnigmaB_2-webfont.woff') format('woff'),
+         url('Police/EnigmaB_2-webfont.ttf') format('truetype'),
+         url('Police/EnigmaB_2-webfont.svg#enigmaticregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+/* Header */
+
+header
+{
+    height: 50px;   
+    background-image: linear-gradient(white -1%, #1E90FF 80%);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#titre
+{
+    width:400px;
+    display: inline-block;
+}
+
+#lienlogin
+{
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#lienlogin:hover
+{
+    background-color: white;
+    color: grey;
+}
+
+
+header img
+{
+    width: 45px;
+    display: inline-block;  
+    margin-left: 50px;
+    margin-bottom: 12.5px;
+    margin-right: 8px;
+}
+
+
+header h1 
+{
+
+    display: inline-block;
+    font-family: 'enigmaticregular';
+    position: relative;
+    bottom: 18px;
+    width: 20%;
+    color: #003366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu */
+
+nav
+{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    position: sticky;
+   
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin-top: 0px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #847E7E;
+
+}   
+
+.menu
+{
+    display: inline-block;
+    float:left;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    right: 0;
+    top: 50%;
+    width: 9em;
+    margin-top: -2.5em;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+
+
+nav ul li a:hover
+{
+    background-color: white;
+    color: grey;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Body */ 
+
+    /* Accueil */
+
+
+#Docteur
+{
+    background-color: rgba(255,255,255,0.75);
+    margin-bottom: 0px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0 30px 15px 30px;
+}
+
+#sectiontest
+{
+    width: 100%;
+    text-align: center;
+
+}
+
+#englobe
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+        /* SlideShow */
+
+#diaporama
+{
+    margin: 0;
+    width: 100%;
+    height: 720px;
+    border: 3px solide #333;
+    margin-bottom: 20px;
+    background-image: url("Images/raton.jpg");
+
+    webkit-animation-name: diapo1;
+    webkit-animation-duration: 12s;
+    webkit-animation-timing-function:linear;
+    webkit-animation-iteration-count: infinite;
+    webkit-animation-direction: normal;
+
+    moz-animation-name: diapo1;
+    moz-animation-animation-duration: 12s;
+    moz-animation-timing-function:linear;
+    moz-animation-iteration-count: infinite;
+    moz-animation-direction: normal;
+
+    animation-name: diapo1;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+} 
+
+@-webkit-keyframes diapo1{
+    0%{background-image: url("Images/test.jpg");}
+    33%{background-image: url("Images/test2.jpg");}
+    66%{background-image: url("Images/vertex.jpg");}
+}
+
+@-moz-keyframes diapo1{
+    0%{background-image: url("Images/est.jpg");}
+    33%{background-image: url("Images/test2.jpg");}
+    66%{background-image: url("Images/vertex.jpg");}
+}
+
+@keyframes diapo1{
+    0%{background-image: url("Images/test.jpg");}
+    33%{background-image: url("Images/test2.jpg");}
+    66%{background-image: url("Images/vertex.jpg");}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Présentation */
+
+.titrepresentation {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'enigmaticregular';
+}
+
+.divpresentation {
+    background-color: rgba(255,255,255,0.75);
+    border: 1px solid black;
+    margin: 15px 0 15px 0;
+}
+
+.textepresentation {
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+        /* ou sommes nous ? */
+
+iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+
+        /* Les docteurs */
+
+#Docteur
+{
+    margin-bottom: 0px;
+}
+
+#sectiontest
+{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+
+}
+
+#englobe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Nos produits */
+
+.divproduit
+{
+    background-color: rgba(255,255,255,0.75);
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+
+.sectionproduit
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.articleproduit
+{
+    width : 65%;
+}
+
+.titreproduit
+{
+    margin-left: 10px;
+    margin-top: 15px;   
+    font-family: 'enigmaticregular';
+}
+
+.texteproduit
+{
+    margin-left: 10px;
+}
+
+#imgproduit
+{
+    width: 500px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* A propos */ 
+
+#histoiregsb
+{
+    background-color: rgba(255,255,255,0.75);
+    padding-top: 15px; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#h1propos
+{
+    margin-left: 15px;
+    margin-bottom: 50px;
+    font-family: 'enigmaticregular';
+}
+
+#sectionpropos
+{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+#h2propos
+{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'enigmaticregular';
+}
+
+#asidepropos
+{
+    margin-bottom: 50px;
+    text-align: center;
+    width: 15%;
+    margin-right: 50px;
+}
+
+#articlepropos
+{
+    margin-left: 15px;
+    width: 80%;
+}
+
+#photoa
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgba(255,255,255,0.75);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.photopropos
+{
+    width: 25%;
+    margin-bottom: 15px;
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Actualités */ 
+
+#divactu {
+    background-color: rgba(255,255,255,0.75);
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+#sectionactu {
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+#imgactu {
+  width: 500px;
+  margin-top: 5px;
+
+}
+
+.articleactu {
+    width : 65%;
+}
+
+.texteactu {
+    margin-left: 10px;
+}
+
+.titreactu {
+    margin-left: 10px;
+    margin-top: 30px;
+    font-family: 'enigmaticregular';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Nous contacter */
+
+        /* Téléphone et E-mail */ 
+
+.iconecontact {
+    display : inline-block;
+}
+
+.titrecontact {
+    display: inline-block;
+    padding-left: 10px;
+    font-family: 'enigmaticregular';
+}
+
+#h1contact
+{
+    font-family: 'enigmaticregular';
+}
+
+.divcontact {
+    width: 30%;
+    border-right: 2px solid black;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.paracontact {
+    font-size: 1.2em;
+}
+        /* Horaires */
+
+.tableaucontact {
+    border-collapse: collapse;
+    font-size: 2em;
+}
+
+.casecontact {
+    border: 2px solid black;
+}
+
+.heurecontact {
+   
+    margin-left: 20%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+        /* Div général */
+ 
+.conteneurcontact {
+    display: flex;
+    margin: 105px 25px 145px 25px;
+    background-color: rgba(255,255,255,0.75);
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Login */
+
+#conteneurconnecter
+{
+    display: flex;
+    margin: 0 25px 0 25px;
+    background-color: rgba(255,255,255,0.75);
+    border: 1px solid black ;
+    margin-bottom: 30px;
+}
+
+#divconnecter 
+{
+     width: 30%;
+    border-right: 2px solid black;
+    text-align: left;
+    margin-left: 20%;
+}
+
+#divinscription
+{
+     width: 30%;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.labellogin
+{
+    margin-bottom: 5px; 
+
+}
+
+.inputlogin
+{ 
+    margin-bottom: 5px;    
+}
+
+.buttonlogin
+{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Plan */ 
+
+.mod
+{
+    background-color: rgba(255,255,255,0.75);
+    padding: 10px 0 20px 0;
+    margin: 50px 0 110px 0;
+    text-align: center;
+    font-size: large;
+    border: 1px solid black;
+}
+
+#plansite
+{
+    margin-left: 40px;
+    font-family: enigmaticregular;
+}
+
+#apropos
+{
+    margin-right: 10px;
+}
+.litest
+{
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.titreh3
+{
+    margin-left: 15%;
+}
+
+#Plandroite
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+    list-style-type: none; 
+}
+
+.Planmilieu
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; 
+}
+
+#Plangauche
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+    list-style-type: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer
+{
+    background-image: linear-gradient(#1E90FF 10%, white 90%);
+    position: relative;
+}
+
+#phone
+{
+    margin-left: 35%;
+}
+
+#help
+{
+    padding-top: 10px;
+    margin-left: 15%;
+}
+
+#pcontact 
+{
+    margin-left: 36%;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#phelp
+{
+    margin-left:18%;
+    display: inline-block;
+}
+
+#Copyright 
+{
+	color: rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+#Mentions
+{
+	display: flex;
+	justify-content: space-between;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+#Conf
+{
+	border-right: 2px solid;
+	border-left: 2px solid;
+	padding: 0 20px 0 20px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+#Conf:hover
+{
+    background-color: white;
+    color: grey;
+}
+
+#Légales
+{
+	border-left: 2px solid;
+	padding-left: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    padding-right: 15px;
+}
+
+#Légales:hover
+{
+    background-color: white;
+    color: grey;
+}
+
+#Cookies
+{
+	border-right: 2px solid;
+	padding-right: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+}
+
+#Cookies:hover
+{
+    background-color: white;
+    color: grey;
+}
+
+
+
+
